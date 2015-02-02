@@ -97,9 +97,9 @@ end
   end
 end
 #adding new relic repo
-apt_repository 'new relic' do
- uri 'deb http://apt.newrelic.com/debian/' 
- distribution 'newrelic'
- components ['non-free']
- key 'https://download.newrelic.com/548C16BF.gpg' 
-end
+#apt_repository 'newrelic' do
+# uri 'http://apt.newrelic.com/debian' 
+# distribution 'newrelic'
+# components ['non-free']
+# key 'https://download.newrelic.com/548C16BF.gpg' 
+#end
