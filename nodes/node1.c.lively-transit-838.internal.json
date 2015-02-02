@@ -5,8 +5,7 @@
   "recipe[chef-client]",
   "recipe[chef-client::config]",
   "recipe[apt]",
-  "recipe[vim]",
-  "recipe[apache2]"
+  "recipe[vim]"
 ]
 ,
   "normal": {
