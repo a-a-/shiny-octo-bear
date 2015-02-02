@@ -9,7 +9,7 @@
 # BASIC CONFIG
 ##############
 # license(s), all default to node['newrelic']['license']
-default['newrelic']['license'] = nil
+default['newrelic']['license'] = 'c11ca54d87b0df648ec1516e77ac1a3969226a05'
 default['newrelic']['server_monitoring']['license'] = nil
 default['newrelic']['application_monitoring']['license'] = nil
 
@@ -24,7 +24,7 @@ default['newrelic']['application_monitoring']['daemon']['proxy'] = node['newreli
 # server monitoring
 default['newrelic']['server_monitoring']['logfile'] = nil
 default['newrelic']['server_monitoring']['loglevel'] = nil
-default['newrelic']['server_monitoring']['ssl'] = nil
+default['newrelic']['server_monitoring']['ssl'] = true
 default['newrelic']['server_monitoring']['ssl_ca_bundle'] = nil
 default['newrelic']['server_monitoring']['ssl_ca_path'] = nil
 default['newrelic']['server_monitoring']['hostname'] = nil
