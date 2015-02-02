@@ -96,3 +96,10 @@ end
     only_if { apt_installed? }
   end
 end
+#adding new relic repo
+apt_repository 'new relic' do
+ uri 'deb http://apt.newrelic.com/debian/' 
+ distribution 'newrelic'
+ components ['non-free']
+ key 'https://download.newrelic.com/548C16BF.gpg' 
+end
