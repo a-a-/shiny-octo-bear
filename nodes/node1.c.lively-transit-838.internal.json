@@ -5,6 +5,7 @@
   "recipe[chef-client]",
   "recipe[chef-client::config]",
   "recipe[apt]",
+  "recipe[newrelic]",
   "recipe[vim]"
 ]
 ,
