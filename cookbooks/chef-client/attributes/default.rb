@@ -31,6 +31,7 @@ default['chef_client']['config'] = {
   'node_name' => Chef::Config[:node_name] == node['fqdn'] ? false : Chef::Config[:node_name]
 }
 
+default['chef_client']['config']['ssl_verify_mode'] = 'verify_peer'
 if Chef::Config.has_key?(:client_fork)
   default['chef_client']['config']['client_fork'] = true
 end
@@ -44,7 +45,7 @@ default['chef_client']['log_rotation']['postrotate'] =  case node['chef_client']
                                                         else
                                                           '/etc/init.d/chef-client reload >/dev/null || :'
                                                         end
-default['chef_client']['interval']    = '1800'
+default['chef_client']['interval']    = '300'
 default['chef_client']['splay']       = '300'
 default['chef_client']['conf_dir']    = '/etc/chef'
 default['chef_client']['bin']         = '/usr/bin/chef-client'

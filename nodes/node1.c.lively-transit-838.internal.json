@@ -1,0 +1,17 @@
+{
+  "name": "node1.c.lively-transit-838.internal",
+  "chef_environment": "_default",
+  "run_list": [
+  "recipe[chef-client]",
+  "recipe[chef-client::config]",
+  "recipe[apt]",
+  "recipe[vim]",
+  "recipe[apache2]"
+]
+,
+  "normal": {
+    "tags": [
+
+    ]
+  }
+}
