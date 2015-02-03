@@ -15,7 +15,7 @@ end
 
 depends "apache2", ">= 2.0.0"
 depends "database", ">= 1.6.0"
-depends "mysql", ">= 5.0.0"
+depends "mysql", "~> 5.0.0"
 depends "mysql-chef_gem", ">= 0.0.2"
 depends "build-essential"
 depends "iis", ">= 1.6.2"
